@@ -80,4 +80,42 @@ console.log('Item--', newArray)
 
 ```
 
+### Get unique value from two arrays
+
+```js
+
+const arr1 = [11,41,56,34, 78];
+const arr2 = [10, 55, 56, 34, 90, 65, 41];
+
+let unique1 = arr1.filter((o) => arr2.indexOf(o) === -1);
+let unique2 = arr2.filter((o) => arr1.indexOf(o) === -1);
+const unique = unique1.concat(unique2);
+console.log(unique);
+
+// [ 11, 78, 10, 55, 90, 65 ]
+
+```
+
+### MAKE AN ARRAY EMPTY
+
+```js
+
+const array2 = [11, 41, 56, 34, 78];
+
+array2.splice(0, array2.length)
+
+OR 
+
+for(let i = array2.length; i >= 0; i--){
+    
+    //array2.pop(i)
+    OR
+    //array2.shift(i)
+}
+
+console.log(array2)
+
+```
+
+
 
