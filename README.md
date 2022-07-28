@@ -117,5 +117,26 @@ console.log(array2)
 
 ```
 
+```js
+
+const a = [11,12,13,14,15];
+
+
+
+let tmp = [ ...a ];
+//array.splice(0,a.length)
+for(let i = 0; i <= a.length; i++) {
+    
+    
+    tmp.shift(i);
+    
+   // a.pop(i);
+    
+}
+
+console.log('=',tmp);
+
+```
+
 
 
